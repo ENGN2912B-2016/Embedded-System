@@ -1,18 +1,10 @@
 # Speech Processing
 
-General format (based on GUI)
+The included code represents a working MATLAB implementation of the proposed VAD algorithm. 
+To run it, load the Test01.wav waveform into MATLAB and call the supplied VAD function on the
+test data and its sampling rate of 44100 Hz.
 
-XYZ.pro
-    This file (the main project file) contains information about project level 
-    and is used to build a single project or subproject. This also contains the
-    makefiles informations for qmake.
-    
-XYZ.h
-    This file contains header information for the application.It includes
-    other project specific headers and declares the Widget class.
-
-XYZ.cpp
-    This is the main application source file that contains the application
-    class for Widget. This file controls the GUI screen and functionality of
-    the widgets on the screen.
-
+Included as well is a first attempt at adapting the algorithm to a C++ implementation. This
+piece of code still requires some debugging to get the algorithm itself working correctly, 
+but it will still run on the supplied testspeech.wma file and output a similar waveform. You
+can compare the two datasets, but as we mentioned, the algorithm is not yet fully working.
