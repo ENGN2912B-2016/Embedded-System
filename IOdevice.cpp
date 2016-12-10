@@ -1,10 +1,15 @@
 #include "IOdevice.h"
 #include <QtCharts/QXYSeries>
+#include <QTextStream>
+#include <iostream>
+#include <QFile>
 
+using namespace std;
 IOdevice::IOdevice(QXYSeries * series, QObject *parent) :
     QIODevice(parent),
     m_series(series)
 {
+
 }
 
 qint64 IOdevice::readData(char * data, qint64 maxSize)
@@ -33,5 +38,15 @@ qint64 IOdevice::writeData(const char * data, qint64 maxSize)
         points.append(QPointF(k + size, ((quint8)data[resolution * k] - 128)/128.0));
 
     m_series->replace(points);
+    QString filename = "Data.txt";
+    QFile file(filename);
+
+    if (file.open(QIODevice::ReadWrite | QIODevice::Text))
+    {
+        QTextStream stream(&file);
+        stream<<m_series<<endl;
+
+    }
+   // cout<<m_series<<endl;
     return maxSize;
 }
