@@ -1,0 +1,5 @@
+This branch contains the following zip files:
+*src.zip : Contains all the source codes.
+*build.zip: Contains the makefiles.
+*release.zip: Contains .exe application file and all the dlls required.
+*QtPlugins.zip: Cointains all the plugins necessary to run .exe without Qt installed on the host computer.
