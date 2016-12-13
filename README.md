@@ -1,6 +1,4 @@
-# Embedded-System Team
-# Topic: An Embedded Platform for Real-time Speech processing
-
+# I/O Preprocessing
 This file contains a summary of what you will find in each of the branches within the project. For ease of coding, the project has been divided to three branches- I/O handeling, Speech processing and GUI_development.
 
 Pre-processing
