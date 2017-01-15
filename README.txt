@@ -1,7 +1,6 @@
 README
 
 Please follow the instructions below to run this project.
-If you encounter any issues please call Olha at (503) 310-1143.
 
 Setting Up Hadware and Software:
 1. Download 'vadMod_noThread.zip' from the Speech-Processing repository to your RPi.
